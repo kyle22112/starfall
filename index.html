@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Starfall Server</title>
     <style>
         body {
@@ -24,10 +23,6 @@
             color: #333;
             text-align: center;
         }
-        p {
-            color: #666;
-            text-align: center;
-        }
         .discord-button {
             display: block;
             width: 200px;
@@ -43,30 +38,59 @@
         .discord-button:hover {
             background-color: #677bc4;
         }
-        .center-image {
-            display: block;
-            margin: 0 auto;
+        .reviews-section {
+            margin-top: 20px;
+        }
+        .reviews-header {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .review-block {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .review {
+            width: calc(33.33% - 10px); /* 3 reviews per row */
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+        .review-content {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .review-author {
+            font-style: italic;
+            color: #888;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Welcome to Starfall!</h1>
-        <img src='star-modified.png' class="center-image" width="200" height="200">
-        <p>Starfall is a growing Discord server with fun features and activities.</p>
         <a href="https://discord.gg/CsfqMEjQZn" class="discord-button">Join Discord Server</a>
+        <div class="reviews-section">
+            <div class="reviews-header">Reviews</div>
+            <div class="review-block">
+                <div class="review">
+                    <p class="review-content">"Great server with friendly community. Highly recommended!"</p>
+                    <p class="review-author">- John Doe</p>
+                </div>
+                <div class="review">
+                    <p class="review-content">"I've been a member for months and I love it here! Awesome admins and fun events!"</p>
+                    <p class="review-author">- Jane Smith</p>
+                </div>
+                <!-- Add more review blocks here -->
+            </div>
+        </div>
     </div>
-    <div id="reviews">
-    <!-- Manually added reviews go here -->
-    <div class="review">
-        <p class="review-content">"This server is one of the best I've joined, there's nice people, an active owner, and there's even fun websites and more!!"</p>
-        <p class="review-author">- princesscookie0387</p>
-    </div>
-    <div class="review">
-        <p class="review-content">"I've been a member for months and I love it here! Awesome admins and fun events!"</p>
-        <p class="review-author">- Jane Smith</p>
-    </div>
-</div>
-
 </body>
 </html>
+
