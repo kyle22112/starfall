@@ -40,26 +40,26 @@
         }
         .reviews-section {
             margin-top: 20px;
+            text-align: center;
         }
         .reviews-header {
             font-size: 20px;
             font-weight: bold;
             margin-bottom: 10px;
-            text-align: center;
         }
         .review-block {
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
-            justify-content: space-between;
-            margin-bottom: 20px;
+            margin-top: 10px;
         }
         .review {
-            width: calc(33.33% - 10px); /* 3 reviews per row */
+            width: calc(33.33% - 20px); /* 3 reviews per row */
             background-color: #f9f9f9;
             padding: 10px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-bottom: 10px;
+            margin: 0 10px 10px;
         }
         .review-content {
             font-size: 16px;
@@ -75,7 +75,10 @@
 <body>
     <div class="container">
         <h1>Welcome to Starfall!</h1>
-        <a href="https://discord.gg/CsfqMEjQZn" class="discord-button">Join Discord Server</a>
+        <div>
+            <img src="star-modified.png" alt="Starfall Image" width="200" height="200" style="display: block; margin: 0 auto;">
+            <a href="https://discord.gg/CsfqMEjQZn" class="discord-button">Join Discord Server</a>
+        </div>
         <div class="reviews-section">
             <div class="reviews-header">Reviews</div>
             <div class="review-block">
@@ -93,4 +96,3 @@
     </div>
 </body>
 </html>
-
